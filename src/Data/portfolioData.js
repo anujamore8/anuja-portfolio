@@ -1,36 +1,23 @@
 const portfolioData = {
     personal: {
         name: "Anuja More",
-
-        title: "Data Analyst | Aspiring Data Scientist | AI Enthusiast",
-
+        role: "Data Analyst | Aspiring Data Scientist | AI Enthusiast",
         tagline:
-            "Turning data into meaningful insights through Machine Learning, Data Analytics, and AI.",
-
-        email: "anujamore288@gmail.com",
-
-        phone: "+91 7058802302",
-
-        location: "Pune, Maharashtra",
-
+            "Turning data into meaningful insights through analytics, visualization, and machine learning.",
         github: "https://github.com/anujamore8",
-
         linkedin: "https://www.linkedin.com/in/anuja-more-67169a347/",
+        resume: "/src/assets/resume/Anuja_More_Resume Data Analysis.pdf",
     },
 
     navigation: [
-        "Home",
-        "About",
-        "Skills",
-        "Experience",
-        "Projects",
-        "Certificates",
-        "Contact",
+        "home",
+        "about",
+        "skills",
+        "experience",
+        "projects",
+        "certifications",
+        "contact",
     ],
-    hero: {
-        greeting: "Hello, I'm",
-        subtitle: "Turning Data into Meaningful Insights",
-    },
 };
 
 export default portfolioData;

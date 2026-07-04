@@ -1,87 +1,104 @@
 import profile from "../../assets/images/profile.jpeg";
 import portfolioData from "../../data/portfolioData";
-
-import {
-    FaGithub,
-    FaLinkedin,
-    FaDownload,
-} from "react-icons/fa";
+import Button from "../../ui/Button";
+import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 
 function Hero() {
     return (
         <section
-            id="Home"
-            className="min-h-screen bg-slate-900 flex items-center pt-24"
+            id="home"
+            className="min-h-screen bg-slate-50 flex items-center justify-center px-6 pt-32"
         >
-            <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+            <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
-                {/* LEFT SECTION */}
+                {/* Left Side */}
                 <div>
 
-                    <p className="text-sky-400 text-xl font-medium mb-3">
+                    <p className="text-blue-600 text-lg font-semibold mb-3">
                         👋 Hello, I'm
                     </p>
 
-                    <h1 className="text-6xl font-extrabold text-white leading-tight">
+                    <h1 className="text-5xl md:text-6xl font-bold text-slate-900 leading-tight">
                         {portfolioData.personal.name}
                     </h1>
 
-                    <h2 className="text-3xl font-semibold text-sky-400 mt-5">
-                        Data Analyst | Aspiring Data Scientist | AI Enthusiast
+                    <h2 className="text-2xl font-semibold text-slate-600 mt-4">
+                        {portfolioData.personal.role}
                     </h2>
 
-                    <p className="text-slate-300 text-lg leading-8 mt-8">
+                    <p className="text-slate-600 mt-6 leading-8 text-lg max-w-xl">
                         {portfolioData.personal.tagline}
                     </p>
 
                     {/* Buttons */}
 
-                    <div className="flex flex-wrap gap-5 mt-10">
+                    <div className="flex flex-wrap gap-4 mt-8">
 
-                        <a
-                            href="#"
-                            className="flex items-center gap-2 bg-sky-500 hover:bg-sky-600 transition-all duration-300 px-6 py-3 rounded-xl font-semibold shadow-lg"
-                        >
+                        <Button variant="primary">
                             <FaDownload />
-                            Resume
-                        </a>
+                            <span className="ml-2">Resume</span>
+                        </Button>
 
-                        <a
+                        <Button
+                            variant="secondary"
                             href={portfolioData.personal.github}
                             target="_blank"
-                            rel="noreferrer"
-                            className="flex items-center gap-2 border border-slate-600 hover:border-sky-400 hover:text-sky-400 transition-all duration-300 px-6 py-3 rounded-xl"
                         >
                             <FaGithub />
-                            GitHub
-                        </a>
+                            <span className="ml-2">GitHub</span>
+                        </Button>
 
-                        <a
+                        <Button
+                            variant="secondary"
                             href={portfolioData.personal.linkedin}
                             target="_blank"
-                            rel="noreferrer"
-                            className="flex items-center gap-2 border border-slate-600 hover:border-sky-400 hover:text-sky-400 transition-all duration-300 px-6 py-3 rounded-xl"
                         >
                             <FaLinkedin />
-                            LinkedIn
-                        </a>
+                            <span className="ml-2">LinkedIn</span>
+                        </Button>
+
+                    </div>
+
+                    {/* Stats */}
+
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-14">
+
+                        <div className="bg-white rounded-2xl shadow-md p-5 text-center">
+                            <h3 className="text-3xl font-bold text-blue-600">5</h3>
+                            <p className="text-slate-600 mt-2">Projects</p>
+                        </div>
+
+                        <div className="bg-white rounded-2xl shadow-md p-5 text-center">
+                            <h3 className="text-3xl font-bold text-blue-600">5</h3>
+                            <p className="text-slate-600 mt-2">Certificates</p>
+                        </div>
+
+                        <div className="bg-white rounded-2xl shadow-md p-5 text-center">
+                            <h3 className="text-3xl font-bold text-blue-600">1</h3>
+                            <p className="text-slate-600 mt-2">Internship</p>
+                        </div>
+
+                        <div className="bg-white rounded-2xl shadow-md p-5 text-center">
+                            <h3 className="text-xl font-bold text-blue-600">
+                                Python • SQL
+                            </h3>
+                            <p className="text-slate-600 mt-2">Core Skills</p>
+                        </div>
 
                     </div>
 
                 </div>
 
-                {/* RIGHT SECTION */}
+                {/* Right Side */}
 
                 <div className="flex justify-center">
 
-                    <div className="relative">
-
-                        <div className="absolute inset-0 rounded-full bg-sky-500 blur-3xl opacity-30"></div>
+                    <div className="bg-gradient-to-br from-blue-500 to-cyan-400 p-2 rounded-full shadow-2xl">
 
                         <img
                             src={profile}
                             alt="Anuja More"
-                            className="relative w-[380px] h-[380px] object-cover rounded-full border-8 border-sky-500 shadow-2xl"
+                            className="w-80 h-80 object-cover rounded-full border-8 border-white"
                         />
 
                     </div>
