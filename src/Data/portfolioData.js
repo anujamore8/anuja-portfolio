@@ -3,10 +3,10 @@ const portfolioData = {
         name: "Anuja More",
         role: "Data Analyst | Aspiring Data Scientist | AI Enthusiast",
         tagline:
-            "Turning data into meaningful insights through analytics, visualization, and machine learning.",
+            "Turning raw data into meaningful insights through Data Analytics, Machine Learning, and AI-powered solutions.",
         github: "https://github.com/anujamore8",
         linkedin: "https://www.linkedin.com/in/anuja-more-67169a347/",
-        resume: "/src/assets/resume/Anuja_More_Resume Data Analysis.pdf",
+        resume: "#",
     },
 
     navigation: [
