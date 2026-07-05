@@ -1,0 +1,195 @@
+.skills {
+    padding: 110px 8%;
+    background: transparent;
+}
+
+/* ========================= */
+/* Main Layout */
+/* ========================= */
+
+.skills-container {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* ========================= */
+/* Left */
+/* ========================= */
+
+.skills-left {
+    background: rgba(255, 255, 255, .72);
+    backdrop-filter: blur(18px);
+    padding: 35px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+}
+
+.skills-left h3 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #111827;
+}
+
+.skill {
+    margin-bottom: 28px;
+}
+
+.skill-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.progress {
+    height: 10px;
+    background: #ececec;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(90deg,
+            #7c3aed,
+            #a855f7);
+}
+
+/* ========================= */
+/* Right */
+/* ========================= */
+
+.tech-card,
+.soft-card {
+    background: rgba(255, 255, 255, .72);
+    backdrop-filter: blur(18px);
+    border-radius: 30px;
+    padding: 35px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+}
+
+.soft-card {
+    margin-top: 30px;
+}
+
+.tech-card h3,
+.soft-card h3 {
+    margin-bottom: 25px;
+    color: #111827;
+    font-size: 1.8rem;
+}
+
+/* ========================= */
+/* Technology Pills */
+/* ========================= */
+
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tech-grid span {
+
+    background: #f5f3ff;
+    color: #6d28d9;
+
+    padding: 12px 18px;
+
+    border-radius: 999px;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.tech-grid span:hover {
+
+    background: #7c3aed;
+    color: white;
+    transform: translateY(-4px);
+
+}
+
+/* ========================= */
+/* Soft Skills */
+/* ========================= */
+
+.soft-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+}
+
+.soft-grid span {
+
+    background: #fff7ed;
+
+    padding: 14px 18px;
+
+    border-radius: 15px;
+
+    color: #374151;
+
+    font-weight: 500;
+
+    transition: .3s;
+
+}
+
+.soft-grid span:hover {
+
+    transform: translateY(-4px);
+
+    background: #fed7aa;
+
+}
+
+/* ========================= */
+/* Responsive */
+/* ========================= */
+
+@media(max-width:992px) {
+
+    .skills-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .soft-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .skills-left,
+    .tech-card,
+    .soft-card {
+
+        padding: 25px;
+
+    }
+
+    .skills-left h3,
+    .tech-card h3,
+    .soft-card h3 {
+
+        font-size: 1.6rem;
+
+    }
+
+}

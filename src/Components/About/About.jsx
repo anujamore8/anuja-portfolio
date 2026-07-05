@@ -1,139 +1,53 @@
+import "./About.css";
+import resume from "../../assets/resume/Anuja_More_Resume Data Analysis.pdf";
 import profile from "../../assets/images/profile.jpeg";
-import portfolioData from "../../data/portfolioData";
-
 import {
-    FaGraduationCap,
     FaMapMarkerAlt,
     FaEnvelope,
-    FaBrain,
-    FaPython,
-    FaChartLine,
-    FaDatabase,
+    FaGraduationCap,
+    FaDownload,
 } from "react-icons/fa";
 
 function About() {
     return (
-        <section
-            id="about"
-            className="py-24 px-6 bg-gradient-to-b from-[#F8F5FF] via-[#FFF8F5] to-[#FFFFFF]"
-        >
-            <div className="max-w-7xl mx-auto">
+        <section id="about" className="about">
 
-                {/* Heading */}
+            <div className="section-heading">
+                <span>ABOUT ME</span>
+                <h2>Turning Data Into Meaningful Insights</h2>
+                <p>
+                    Passionate about Data Analytics, Machine Learning and Artificial
+                    Intelligence with a strong desire to solve real-world business
+                    problems using data.
+                </p>
+            </div>
 
-                <div className="text-center mb-20">
+            <div className="about-container">
 
-                    <p className="uppercase tracking-[5px] text-violet-600 font-semibold">
-                        About Me
-                    </p>
+                {/* Left */}
 
-                    <h2 className="text-5xl font-bold text-slate-900 mt-4">
-                        Turning Data Into Meaningful Insights
-                    </h2>
+                <div className="about-image">
 
-                    <p className="text-slate-600 mt-5 max-w-3xl mx-auto text-lg leading-8">
-                        Passionate about Data Analytics, Machine Learning and Artificial
-                        Intelligence with a strong desire to solve real-world business
-                        problems using data.
-                    </p>
+                    <div className="image-card">
 
-                </div>
+                        <img src={profile} alt="Anuja More" />
 
-                {/* Main Layout */}
+                        <div className="info">
 
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+                            <p>
+                                <FaMapMarkerAlt />
+                                Pune, Maharashtra
+                            </p>
 
-                    {/* Left Card */}
+                            <p>
+                                <FaEnvelope />
+                                anujamore288@gmail.com
+                            </p>
 
-                    <div className="bg-white/80 backdrop-blur-lg rounded-3xl shadow-xl p-10">
-
-                        <div className="flex justify-center">
-
-                            <img
-                                src={profile}
-                                alt="Anuja More"
-                                className="w-64 h-64 rounded-full object-cover border-8 border-violet-100 shadow-lg"
-                            />
-
-                        </div>
-
-                        <div className="mt-10 space-y-5">
-
-                            <div className="flex items-center gap-4">
-
-                                <FaMapMarkerAlt className="text-violet-600 text-xl" />
-
-                                <span className="text-slate-700 text-lg">
-                                    {portfolioData.personal.location}
-                                </span>
-
-                            </div>
-
-                            <div className="flex items-center gap-4">
-
-                                <FaEnvelope className="text-violet-600 text-xl" />
-
-                                <span className="text-slate-700 text-lg break-all">
-                                    {portfolioData.personal.email}
-                                </span>
-
-                            </div>
-
-                            <div className="flex items-center gap-4">
-
-                                <FaGraduationCap className="text-violet-600 text-xl" />
-
-                                <span className="text-slate-700 text-lg">
-                                    {portfolioData.education.cgpa}
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    {/* Right Side */}
-
-                    <div>
-
-                        <h3 className="text-4xl font-bold text-slate-900 mb-8">
-                            Hi, I'm {portfolioData.personal.name}
-                        </h3>
-
-                        <p className="text-slate-600 leading-9 text-lg">
-                            {portfolioData.about.description}
-                        </p>
-
-                        <div className="mt-10 bg-white rounded-3xl shadow-lg p-8">
-
-                            <h4 className="text-2xl font-semibold text-slate-900 mb-6">
-                                Education
-                            </h4>
-
-                            <div className="space-y-3">
-
-                                <p className="text-slate-700 text-lg">
-                                    <strong>Degree:</strong>{" "}
-                                    {portfolioData.education.degree}
-                                </p>
-
-                                <p className="text-slate-700 text-lg">
-                                    <strong>College:</strong>{" "}
-                                    {portfolioData.education.college}
-                                </p>
-
-                                <p className="text-slate-700 text-lg">
-                                    <strong>University:</strong>{" "}
-                                    {portfolioData.education.university}
-                                </p>
-
-                                <p className="text-slate-700 text-lg">
-                                    <strong>Graduation:</strong>{" "}
-                                    {portfolioData.education.graduation}
-                                </p>
-
-                            </div>
+                            <p>
+                                <FaGraduationCap />
+                                9.40 CGPA
+                            </p>
 
                         </div>
 
@@ -141,69 +55,90 @@ function About() {
 
                 </div>
 
-                {/* Highlights */}
+                {/* Right */}
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
+                <div className="about-content">
 
-                    <div className="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 transition">
+                    <h3>Hi, I'm Anuja More 👋</h3>
 
-                        <FaPython className="text-5xl text-blue-600" />
+                    <p>
+                        I am a passionate Information Technology student with a strong
+                        interest in Data Analytics, Machine Learning, Artificial
+                        Intelligence and Business Intelligence.
+                    </p>
 
-                        <h3 className="text-xl font-bold mt-5">
-                            Python
-                        </h3>
+                    <p>
+                        I enjoy transforming raw data into meaningful insights using Python,
+                        SQL, Excel, Power BI, Tableau and Machine Learning. My goal is to
+                        build intelligent data-driven solutions that solve real-world
+                        problems.
+                    </p>
 
-                        <p className="text-slate-600 mt-3">
-                            Data Analysis & Automation
-                        </p>
+                    <div className="education-card">
 
-                    </div>
+                        <h4>Education</h4>
 
-                    <div className="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 transition">
+                        <ul>
 
-                        <FaChartLine className="text-5xl text-green-600" />
+                            <li>
+                                <strong>Degree :</strong> B.E Information Technology
+                            </li>
 
-                        <h3 className="text-xl font-bold mt-5">
-                            Data Analytics
-                        </h3>
+                            <li>
+                                <strong>College :</strong> Parvatibai Genba Moze College of
+                                Engineering, Wagholi
+                            </li>
 
-                        <p className="text-slate-600 mt-3">
-                            Excel, Power BI & Tableau
-                        </p>
+                            <li>
+                                <strong>University :</strong> Savitribai Phule Pune University
+                            </li>
 
-                    </div>
+                            <li>
+                                <strong>CGPA :</strong> 9.40
+                            </li>
 
-                    <div className="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 transition">
+                            <li>
+                                <strong>Graduation :</strong> 2026
+                            </li>
 
-                        <FaBrain className="text-5xl text-violet-600" />
-
-                        <h3 className="text-xl font-bold mt-5">
-                            Machine Learning
-                        </h3>
-
-                        <p className="text-slate-600 mt-3">
-                            Predictive Models & AI
-                        </p>
-
-                    </div>
-
-                    <div className="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 transition">
-
-                        <FaDatabase className="text-5xl text-orange-500" />
-
-                        <h3 className="text-xl font-bold mt-5">
-                            SQL
-                        </h3>
-
-                        <p className="text-slate-600 mt-3">
-                            Querying & Database Management
-                        </p>
+                        </ul>
 
                     </div>
 
+                    <a href={resume} className="resume-btn" target="_blank" rel="noreferrer">
+                        <FaDownload />
+                        Download Resume
+                    </a>
                 </div>
 
             </div>
+
+            {/* Bottom Cards */}
+
+            <div className="about-cards">
+
+                <div className="card">
+                    <h3>🎓 Education</h3>
+                    <p>Strong academic background with 9.40 CGPA.</p>
+                </div>
+
+                <div className="card">
+                    <h3>📊 Data Analytics</h3>
+                    <p>Excel, SQL, Power BI, Tableau & Dashboard Development.</p>
+                </div>
+
+                <div className="card">
+                    <h3>🤖 Machine Learning</h3>
+                    <p>Predictive models using Python and Scikit-Learn.</p>
+                </div>
+
+                <div className="card">
+                    <h3>💡 Problem Solver</h3>
+                    <p>Building real-world projects using AI and Data Science.</p>
+                </div>
+
+            </div>
+
         </section>
     );
 }
