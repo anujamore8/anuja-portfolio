@@ -6,6 +6,7 @@ import Projects from "./Components/Projects/Projects";
 import Certificates from "./Components/Certificates/Certificates";
 import Experience from "./Components/Experience/Experience";
 import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Certificates />
       <Experience />
       <Contact />
+      <Footer />
     </>
   );
 }
