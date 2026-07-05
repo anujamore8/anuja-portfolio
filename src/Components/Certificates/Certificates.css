@@ -1,0 +1,392 @@
+/* ===========================
+   CERTIFICATES SECTION
+=========================== */
+
+.certificates {
+    padding: 100px 0;
+    background: linear-gradient(to bottom,
+            #ffffff,
+            #faf7ff);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===========================
+   SECTION TITLE
+=========================== */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section-subtitle {
+    color: #7c3aed;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    margin-top: 12px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.section-description {
+    margin-top: 18px;
+    color: #6b7280;
+    line-height: 1.8;
+    max-width: 720px;
+    margin-inline: auto;
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+
+.certificate-section-title {
+    margin-bottom: 35px;
+    margin-top: 60px;
+    font-size: 28px;
+    color: #1f2937;
+}
+
+/* ===========================
+   PROFESSIONAL GRID
+=========================== */
+
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.certificate-card {
+    text-decoration: none;
+    color: inherit;
+
+    background: rgba(255, 255, 255, .85);
+
+    border-radius: 22px;
+
+    padding: 35px 28px;
+
+    border: 1px solid #ece8ff;
+
+    box-shadow:
+        0 10px 30px rgba(124, 58, 237, .08);
+
+    transition: .35s;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 280px;
+}
+
+.certificate-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 25px 45px rgba(124, 58, 237, .18);
+
+}
+
+.certificate-icon {
+
+    width: 72px;
+    height: 72px;
+
+    border-radius: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f3ebff;
+
+    color: #7c3aed;
+
+    font-size: 32px;
+
+    margin-bottom: 25px;
+
+    transition: .3s;
+
+}
+
+.certificate-card:hover .certificate-icon {
+
+    transform: rotate(-8deg) scale(1.08);
+
+}
+
+.certificate-card h4 {
+
+    font-size: 22px;
+
+    line-height: 1.4;
+
+    margin-bottom: 15px;
+
+    color: #111827;
+
+}
+
+.certificate-card p {
+
+    color: #6b7280;
+
+    margin-bottom: 10px;
+
+}
+
+.certificate-card span {
+
+    font-weight: 600;
+
+    color: #7c3aed;
+
+    margin-bottom: 25px;
+
+}
+
+.view-text {
+
+    margin-top: auto;
+
+    font-weight: 600;
+
+    color: #7c3aed;
+
+    opacity: .75;
+
+    transition: .3s;
+
+}
+
+.certificate-card:hover .view-text {
+
+    opacity: 1;
+
+    padding-left: 6px;
+
+}
+
+/* ===========================
+   FEATURED CARD
+=========================== */
+
+.featured {
+
+    grid-column: span 3;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 45px;
+
+    background: linear-gradient(135deg,
+            #ffffff,
+            #f7f2ff);
+
+}
+
+.featured .certificate-icon {
+
+    width: 82px;
+
+    height: 82px;
+
+    font-size: 38px;
+
+}
+
+/* ===========================
+   INDUSTRY
+=========================== */
+
+.industry-grid {
+
+    margin-top: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+
+}
+
+.industry-card {
+
+    text-decoration: none;
+
+    color: inherit;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: #fff;
+
+    border: 1px solid #ece8ff;
+
+    box-shadow:
+        0 10px 25px rgba(124, 58, 237, .08);
+
+    transition: .35s;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 240px;
+
+}
+
+.industry-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 40px rgba(124, 58, 237, .18);
+
+}
+
+.industry-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 18px;
+
+    background: #f3ebff;
+
+    font-size: 28px;
+
+    color: #7c3aed;
+
+    margin-bottom: 22px;
+
+    transition: .3s;
+
+}
+
+.industry-card:hover .industry-icon {
+
+    transform: scale(1.08);
+
+}
+
+.industry-card h4 {
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+
+}
+
+.industry-card p {
+
+    line-height: 1.6;
+
+    color: #6b7280;
+
+    margin-bottom: 12px;
+
+}
+
+.industry-card span {
+
+    color: #7c3aed;
+
+    font-weight: 600;
+
+    margin-bottom: 25px;
+
+}
+
+.industry-card .view-text {
+
+    margin-top: auto;
+
+    font-weight: 600;
+
+    color: #7c3aed;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px) {
+
+    .featured {
+
+        grid-column: span 2;
+
+    }
+
+    .certificate-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .industry-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .featured {
+
+        grid-column: span 1;
+
+    }
+
+    .certificate-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .industry-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .section-title {
+
+        font-size: 32px;
+
+    }
+
+}

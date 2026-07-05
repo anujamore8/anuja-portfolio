@@ -18,7 +18,7 @@ const projects = [
         type: "Academic Group Project",
         tech: ["Python", "TensorFlow", "OpenCV", "Streamlit"],
         description:
-            "Developed an explainable deep learning model to detect land use changes from satellite imagery. Contributed to data preprocessing, model development, visualization and deployment.",
+            "Developed an explainable deep learning model to detect land use changes from satellite imagery.",
         github: "#",
         demo: "#",
     },
