@@ -14,15 +14,17 @@ html {
 }
 
 body {
-  background: linear-gradient(135deg,
-      #FFF8F5 0%,
-      #FFF3EB 35%,
-      #FDF2F8 65%,
-      #F5F3FF 100%);
+  background: linear-gradient(to bottom,
+      #FFF8F4 0%,
+      #FDFBFF 50%,
+      #F8F5FF 100%);
+
+  background-attachment: fixed;
 
   color: var(--text-dark);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
+
 
 h1,
 h2,
@@ -35,6 +37,8 @@ h6 {
 
 section {
   padding: 100px 8%;
+  background: transparent;
+
 }
 
 img {
