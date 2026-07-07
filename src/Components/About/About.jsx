@@ -10,7 +10,10 @@ import {
 
 function About() {
     return (
-        <section id="about" className="about">
+        <section
+            id="about"
+            data-aos="fade-up"
+        >
 
             <div className="section-heading">
                 <span>ABOUT ME</span>

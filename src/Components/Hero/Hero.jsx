@@ -29,7 +29,7 @@ function Hero() {
 
                 {/* LEFT */}
 
-                <div>
+                <div data-aos="fade-right">
 
                     <p className="text-violet-600 font-semibold text-lg mb-4">
                         👋 Hello, I'm
@@ -56,11 +56,7 @@ function Hero() {
                             variant="primary"
                         >
                             <FaDownload />
-
-                            <span className="ml-2">
-                                Resume
-                            </span>
-
+                            <span className="ml-2">Resume</span>
                         </Button>
 
                         <Button
@@ -69,11 +65,7 @@ function Hero() {
                             target="_blank"
                         >
                             <FaGithub />
-
-                            <span className="ml-2">
-                                GitHub
-                            </span>
-
+                            <span className="ml-2">GitHub</span>
                         </Button>
 
                         <Button
@@ -82,30 +74,24 @@ function Hero() {
                             target="_blank"
                         >
                             <FaLinkedin />
-
-                            <span className="ml-2">
-                                LinkedIn
-                            </span>
-
+                            <span className="ml-2">LinkedIn</span>
                         </Button>
 
                     </div>
+
                     <div className="h-12"></div>
 
                     {/* Stats */}
 
                     <div className="grid grid-cols-2 gap-6 mt-6">
+
                         <div className="bg-white rounded-3xl p-6 shadow-lg hover:-translate-y-2 transition duration-300">
 
                             <div className="w-12 h-12 rounded-xl bg-violet-100 flex items-center justify-center mb-4">
-
                                 <FaFolderOpen className="text-violet-600 text-xl" />
-
                             </div>
 
-                            <h3 className="text-3xl font-bold">
-                                5+
-                            </h3>
+                            <h3 className="text-3xl font-bold">7</h3>
 
                             <p className="text-slate-500 mt-2">
                                 Projects
@@ -116,14 +102,10 @@ function Hero() {
                         <div className="bg-white rounded-3xl p-6 shadow-lg hover:-translate-y-2 transition duration-300">
 
                             <div className="w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center mb-4">
-
                                 <FaAward className="text-orange-500 text-xl" />
-
                             </div>
 
-                            <h3 className="text-3xl font-bold">
-                                5
-                            </h3>
+                            <h3 className="text-3xl font-bold">12+</h3>
 
                             <p className="text-slate-500 mt-2">
                                 Certificates
@@ -134,14 +116,10 @@ function Hero() {
                         <div className="bg-white rounded-3xl p-6 shadow-lg hover:-translate-y-2 transition duration-300">
 
                             <div className="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center mb-4">
-
                                 <FaBriefcase className="text-green-600 text-xl" />
-
                             </div>
 
-                            <h3 className="text-3xl font-bold">
-                                1
-                            </h3>
+                            <h3 className="text-3xl font-bold">1</h3>
 
                             <p className="text-slate-500 mt-2">
                                 Internship
@@ -152,9 +130,7 @@ function Hero() {
                         <div className="bg-white rounded-3xl p-6 shadow-lg hover:-translate-y-2 transition duration-300">
 
                             <div className="w-12 h-12 rounded-xl bg-pink-100 flex items-center justify-center mb-4">
-
                                 <FaCode className="text-pink-600 text-xl" />
-
                             </div>
 
                             <h3 className="text-lg font-bold">
@@ -170,9 +146,13 @@ function Hero() {
                     </div>
 
                 </div>
+
                 {/* RIGHT */}
 
-                <div className="flex justify-center">
+                <div
+                    className="flex justify-center"
+                    data-aos="fade-left"
+                >
 
                     <div className="relative">
 

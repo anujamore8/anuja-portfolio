@@ -4,7 +4,8 @@ import { FaGithub, FaLinkedin, FaHeart } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="footer"
+            data-aos="fade-up">
 
             <div className="footer-container">
 

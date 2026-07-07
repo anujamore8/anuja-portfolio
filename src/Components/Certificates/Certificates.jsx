@@ -129,13 +129,14 @@ const industryCertificates = [
 
 const Certificates = () => {
     return (
-        <section className="certificates section" id="certifications">
+        <section className="certificates section" id="certifications"
+            data-aos="fade-up">
             <div className="container">
 
                 <div className="section-heading">
                     <span className="section-subtitle">CERTIFICATIONS</span>
 
-                    <h2 className="section-title">
+                    <h2 className="section-heading">
                         Learning & Professional Credentials
                     </h2>
 

@@ -22,7 +22,7 @@ const Experience = () => {
                         EXPERIENCE
                     </span>
 
-                    <h2 className="section-title">
+                    <h2 className="section-heading">
                         Professional Experience
                     </h2>
 
@@ -33,7 +33,8 @@ const Experience = () => {
                     </p>
                 </div>
 
-                <div className="experience-card">
+                <div className="experience-card"
+                    data-aos="fade-left">
 
                     {/* Header */}
 

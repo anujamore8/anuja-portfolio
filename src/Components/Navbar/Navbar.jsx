@@ -26,7 +26,7 @@ function Navbar() {
 
                         {/* Desktop Menu */}
 
-                        <ul className="hidden lg:flex items-center gap-10">
+                        <ul className="hidden lg:flex items-center gap-4">
 
                             {portfolioData.navigation.map((item) => (
 
@@ -38,8 +38,8 @@ function Navbar() {
                                         duration={600}
                                         offset={-80}
                                         spy={true}
-                                        activeClass="text-violet-600"
-                                        className="cursor-pointer capitalize text-slate-600 font-medium hover:text-violet-600 transition-all duration-300"
+                                        activeClass="active-nav"
+                                        className="cursor-pointer capitalize px-4 py-2 rounded-full text-slate-600 font-medium hover:text-violet-600 transition-all duration-300"
                                     >
                                         {item}
                                     </Link>
@@ -50,7 +50,7 @@ function Navbar() {
 
                         </ul>
 
-                        {/* Resume */}
+                        {/* Resume Button */}
 
                         <a
                             href={portfolioData.personal.resume}
@@ -60,7 +60,7 @@ function Navbar() {
                             Resume
                         </a>
 
-                        {/* Mobile */}
+                        {/* Mobile Menu Button */}
 
                         <button
                             onClick={() => setMenuOpen(!menuOpen)}
@@ -91,8 +91,10 @@ function Navbar() {
                                     smooth={true}
                                     duration={600}
                                     offset={-80}
+                                    spy={true}
+                                    activeClass="active-nav"
                                     onClick={() => setMenuOpen(false)}
-                                    className="capitalize text-lg text-slate-700 font-medium cursor-pointer hover:text-violet-600 transition"
+                                    className="capitalize text-lg text-slate-700 font-medium cursor-pointer rounded-full px-4 py-2 transition-all duration-300"
                                 >
                                     {item}
                                 </Link>

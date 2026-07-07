@@ -25,6 +25,16 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+/* ===========================
+   Active Navbar Link
+=========================== */
+
+.active-nav {
+  background: #EDE9FE;
+  color: #7C3AED !important;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, .15);
+}
 
 h1,
 h2,
@@ -53,4 +63,21 @@ button {
 ::selection {
   background: #2563eb;
   color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8B5CF6;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6D28D9;
 }

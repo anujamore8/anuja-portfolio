@@ -39,7 +39,8 @@ function Skills() {
     return (
         <section className="skills" id="skills">
 
-            <div className="section-heading">
+            <div className="section-heading"
+                data-aos="fade-up">
                 <span>MY SKILLS</span>
                 <h2>Technologies I Work With</h2>
 
@@ -108,7 +109,7 @@ function Skills() {
 
                         <div className="soft-grid">
 
-                            {softSkills.map((skill) => (
+                            {softSkills.map((skill, index) => (
                                 <span key={skill}>✓ {skill}</span>
                             ))}
 
