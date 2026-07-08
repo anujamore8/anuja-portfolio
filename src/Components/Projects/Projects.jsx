@@ -263,8 +263,7 @@ const projects = [
         ],
 
         github:
-            "https://github.com/anujamore8/Cab-Booking-system-Using-SQL",
-
+            "https://github.com/anujamore8/Cab-Booking-Analysis-SQL-",
         demo: "#",
     },
 
