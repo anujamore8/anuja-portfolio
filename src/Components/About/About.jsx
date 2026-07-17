@@ -1,5 +1,5 @@
 import "./About.css";
-import resume from "../../assets/resume/Anuja_More_Resume Data Analysis.pdf";
+import resume from "../../assets/resume/Anuja_More_Data_Analyst_Resume.pdf";
 import profile from "../../assets/images/profile.jpeg";
 import {
     FaMapMarkerAlt,
